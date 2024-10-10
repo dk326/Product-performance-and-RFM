@@ -9,7 +9,7 @@ Customer segmentation has been done by using the RFM model (recency, frequency a
 
 **Questions**
 
-1. For each product, how many unique customers have made a purchase?
+**1. For each product, how many unique customers have made a purchase?*
 
 <img width="542" alt="Screenshot 2024-10-10 at 2 12 50 PM" src="https://github.com/user-attachments/assets/774e3a10-e7c5-47db-b342-186444312f04">
 
@@ -18,7 +18,7 @@ Customer segmentation has been done by using the RFM model (recency, frequency a
 - The unique customers have been identified by counting the disctinc IDs
 - The results are grouped by product type and ordered in descending order by number of customers
    
-2. What is the best-selling product based on total sales?
+**2. What is the best-selling product based on total sales?*
 
 <img width="595" alt="Screenshot 2024-10-10 at 2 15 16 PM" src="https://github.com/user-attachments/assets/7d7a95b6-4fc4-4d18-9223-035de0f0310c">
 
@@ -27,7 +27,7 @@ Customer segmentation has been done by using the RFM model (recency, frequency a
 - The products have been selected and the total amount paid is aggregated by using sum to identify profitability
 - The final result is grouped by product and limited to 1 to only show the best selling product
   
-3. For each customer, calculate and list their RFM Value scores based on their transaction history?
+**3. For each customer, calculate and list their RFM Value scores based on their transaction history?*
 
 <img width="636" alt="Screenshot 2024-10-10 at 2 17 00 PM" src="https://github.com/user-attachments/assets/abba5299-c47a-4a1c-83c0-1ddb1f105752">
 
@@ -37,7 +37,7 @@ Customer segmentation has been done by using the RFM model (recency, frequency a
 - Therefore, in order to get the frequency scores of this type, the null values have been replaced by current date
 - Frequency is taken as the count of all disctict fulfilment end dates and the monetary is the sum of total paid. 
    
-4. Segment customers into five groups for each of the three key metrics: Recency,Frequency, and Monetary value based on their transaction history?
+**4. Segment customers into five groups for each of the three key metrics: Recency,Frequency, and Monetary value based on their transaction history?*
 
 <img width="647" alt="Screenshot 2024-10-10 at 2 18 01 PM" src="https://github.com/user-attachments/assets/315e4d16-0bb3-4cfa-9783-b963eecb0e14">
 
