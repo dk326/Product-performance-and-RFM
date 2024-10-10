@@ -33,7 +33,7 @@ Customer segmentation has been done by using the RFM model (recency, frequency a
 
 <img width="696" alt="Screenshot 2024-10-10 at 2 17 16 PM" src="https://github.com/user-attachments/assets/11870ad5-d22d-439f-9f13-e41b1c2c3f99">
 
-- It is important to note that, in this dataset the product type of membership is an ongoing subscription. Therefore, if this membership is active, the fulfilment end date column is null. 
+- It is important to note that, in this dataset the product type of gold membership is an ongoing subscription. Therefore, if this membership is active, the fulfilment end date column is null. 
 - Therefore, in order to get the frequency scores of this type, the null values have been replaced by current date
 - Frequency is taken as the count of all disctict fulfilment end dates and the monetary is the sum of total paid. 
    
@@ -46,3 +46,20 @@ Customer segmentation has been done by using the RFM model (recency, frequency a
 - This code uses to common table expressions (CTE). The first CTE is used to identify RFM scores of each id
 - The second CTE selects the RFM scores by ID and creates 5 quantiles for each of Recency, Frequency and Monetary value and then combines these values ointo a single RFM cell value.
 - The final Query is ordered by descending RFM cell value to identify the best customers first.
+
+**Additional Segmentation*
+
+<img width="695" alt="Screenshot 2024-10-10 at 3 47 28 PM" src="https://github.com/user-attachments/assets/a38995b2-7e6f-44bd-ab82-a9e48557b2fb">
+
+<img width="709" alt="Screenshot 2024-10-10 at 3 47 53 PM" src="https://github.com/user-attachments/assets/8c95ebdc-613e-45a2-b618-2c14fc002410">
+
+- By using two other CTEs customers can be further segmented based on RFM cell values. 
+- Eventhough the customers have been grouped by the Ids here, they can be grouped by the rfm group if needed.
+
+**Data Cleaning*
+
+The dataset consisted of missing values. Based on the data dictionary, the null values of gold memberships were active subscriptions. Therefore, the cleaning has been done while keeping the active memberships. 
+
+<img width="738" alt="Screenshot 2024-10-10 at 3 52 22 PM" src="https://github.com/user-attachments/assets/f19000b1-fd0a-4463-b2d3-5c3e04ba8142">
+
+
